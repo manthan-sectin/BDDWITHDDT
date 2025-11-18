@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-11-03T15:59:19 IST" name="Default suite" finished-at="2025-11-03T15:59:20 IST" duration-ms="632">
+    <groups>
+    </groups>
+    <test started-at="2025-11-03T15:59:19 IST" name="Default test" finished-at="2025-11-03T15:59:20 IST" duration-ms="632">
+      <class name="ExcelData.DataProvider">
+        <test-method signature="GetDataFromExcel(java.lang.String,java.lang.String)[pri:0, instance:ExcelData.DataProvider@5b529706]" started-at="2025-11-03T15:59:20 IST" name="GetDataFromExcel" data-provider="DataSupplier" finished-at="2025-11-03T15:59:20 IST" duration-ms="10" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pass1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetDataFromExcel -->
+        <test-method signature="GetDataFromExcel(java.lang.String,java.lang.String)[pri:0, instance:ExcelData.DataProvider@5b529706]" started-at="2025-11-03T15:59:20 IST" name="GetDataFromExcel" data-provider="DataSupplier" finished-at="2025-11-03T15:59:20 IST" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pass2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetDataFromExcel -->
+        <test-method signature="GetDataFromExcel(java.lang.String,java.lang.String)[pri:0, instance:ExcelData.DataProvider@5b529706]" started-at="2025-11-03T15:59:20 IST" name="GetDataFromExcel" data-provider="DataSupplier" finished-at="2025-11-03T15:59:20 IST" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pass3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetDataFromExcel -->
+      </class> <!-- ExcelData.DataProvider -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

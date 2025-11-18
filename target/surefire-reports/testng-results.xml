@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-10-25T21:55:44 IST" name="Regression Suite" finished-at="2025-10-25T21:55:55 IST" duration-ms="10793">
+    <groups>
+    </groups>
+    <test started-at="2025-10-25T21:55:44 IST" name="Chrome Test" finished-at="2025-10-25T21:55:53 IST" duration-ms="9553">
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="startTest()[pri:0, instance:tests.LoginTest@37efd131]" started-at="2025-10-25T21:55:44 IST" name="startTest" finished-at="2025-10-25T21:55:44 IST" duration-ms="241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.LoginTest@37efd131]" started-at="2025-10-25T21:55:44 IST" name="setUp" finished-at="2025-10-25T21:55:49 IST" duration-ms="5216" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="LoginTest()[pri:1, instance:tests.LoginTest@37efd131]" started-at="2025-10-25T21:55:49 IST" name="LoginTest" finished-at="2025-10-25T21:55:52 IST" duration-ms="2641" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@37efd131]" started-at="2025-10-25T21:55:52 IST" name="getResult" finished-at="2025-10-25T21:55:52 IST" duration-ms="12" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LoginTest status=SUCCESS method=LoginTest.LoginTest()[pri:1, instance:tests.LoginTest@37efd131] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@37efd131]" started-at="2025-10-25T21:55:52 IST" name="tearDown" finished-at="2025-10-25T21:55:52 IST" duration-ms="383" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="endReport()[pri:0, instance:tests.LoginTest@37efd131]" started-at="2025-10-25T21:55:52 IST" name="endReport" finished-at="2025-10-25T21:55:53 IST" duration-ms="1018" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- tests.LoginTest -->
+    </test> <!-- Chrome Test -->
+    <test started-at="2025-10-25T21:55:44 IST" name="Firefox Test" finished-at="2025-10-25T21:55:55 IST" duration-ms="10793">
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="startTest()[pri:0, instance:tests.LoginTest@55562aa9]" started-at="2025-10-25T21:55:44 IST" name="startTest" finished-at="2025-10-25T21:55:44 IST" duration-ms="241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.LoginTest@55562aa9]" started-at="2025-10-25T21:55:44 IST" name="setUp" finished-at="2025-10-25T21:55:52 IST" duration-ms="8413" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="LoginTest()[pri:1, instance:tests.LoginTest@55562aa9]" started-at="2025-10-25T21:55:52 IST" name="LoginTest" finished-at="2025-10-25T21:55:53 IST" duration-ms="748" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@55562aa9]" started-at="2025-10-25T21:55:53 IST" name="getResult" finished-at="2025-10-25T21:55:53 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LoginTest status=SUCCESS method=LoginTest.LoginTest()[pri:1, instance:tests.LoginTest@55562aa9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@55562aa9]" started-at="2025-10-25T21:55:53 IST" name="tearDown" finished-at="2025-10-25T21:55:54 IST" duration-ms="1275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="endReport()[pri:0, instance:tests.LoginTest@55562aa9]" started-at="2025-10-25T21:55:54 IST" name="endReport" finished-at="2025-10-25T21:55:55 IST" duration-ms="87" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- tests.LoginTest -->
+    </test> <!-- Firefox Test -->
+  </suite> <!-- Regression Suite -->
+</testng-results>
