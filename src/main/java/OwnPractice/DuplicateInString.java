@@ -8,27 +8,38 @@ public class DuplicateInString {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		String str="madavvm";
-		StringBuilder sb=new StringBuilder();
-		Set<Character> seen=new LinkedHashSet<>();
-		Set<Character> dup=new LinkedHashSet<>();
-		for(char c:str.toCharArray()) {
-			if(seen.add(c)) {
-				sb.append(c);
-			}
-			else {
-				dup.add(c);
-			}
+		String str = "nanmm";
+		StringBuilder sb = new StringBuilder(str);
+		Set<Character> first = new LinkedHashSet<>();
+		Set<Character> duplicate = new LinkedHashSet<>();
+		Set<Character> set = new LinkedHashSet<>();
+
+		for(char c : str.toCharArray()) {
+			if(!first.add(c)) {
+				duplicate.add(c);
+				
+				
+			}	
 		}
-		System.out.println(seen);
-		System.out.println(sb.toString());
-		System.out.println(dup);
+		
+		System.out.println("Duplicate characters are : ");
+		for(char c : duplicate) {
+			System.out.println(c + " ");
+		}
+		
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////	
 		
 		
+		for (char c : str.toCharArray()) {
+			set.add(c);
 		
-		
-		
-		
+
+		}
+		System.out.println("Unique characters:");
+		for (char s : set) {
+     System.out.println(s + " ");
+		}
+
 	}
 
 }
