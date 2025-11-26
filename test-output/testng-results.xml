@@ -1,61 +1,213 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="8" total="14" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-03T15:59:19 IST" name="Default suite" finished-at="2025-11-03T15:59:20 IST" duration-ms="632">
+  <suite started-at="2025-11-26T14:44:44 IST" name="Regression Suite" finished-at="2025-11-26T14:45:22 IST" duration-ms="37632">
     <groups>
     </groups>
-    <test started-at="2025-11-03T15:59:19 IST" name="Default test" finished-at="2025-11-03T15:59:20 IST" duration-ms="632">
-      <class name="ExcelData.DataProvider">
-        <test-method signature="GetDataFromExcel(java.lang.String,java.lang.String)[pri:0, instance:ExcelData.DataProvider@5b529706]" started-at="2025-11-03T15:59:20 IST" name="GetDataFromExcel" data-provider="DataSupplier" finished-at="2025-11-03T15:59:20 IST" duration-ms="10" status="PASS">
+    <test started-at="2025-11-26T14:44:44 IST" name="Chrome Test" finished-at="2025-11-26T14:44:55 IST" duration-ms="10371">
+      <class name="tests.LoginTest3ProblemUser">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.LoginTest3ProblemUser@3a3e4aff]" started-at="2025-11-26T14:44:52 IST" name="setUp" finished-at="2025-11-26T14:44:54 IST" duration-ms="2009" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[user1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Pass1]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- GetDataFromExcel -->
-        <test-method signature="GetDataFromExcel(java.lang.String,java.lang.String)[pri:0, instance:ExcelData.DataProvider@5b529706]" started-at="2025-11-03T15:59:20 IST" name="GetDataFromExcel" data-provider="DataSupplier" finished-at="2025-11-03T15:59:20 IST" duration-ms="6" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="LoginTestProblemUser()[pri:1, instance:tests.LoginTest3ProblemUser@3a3e4aff]" started-at="2025-11-26T14:44:54 IST" name="LoginTestProblemUser" finished-at="2025-11-26T14:44:55 IST" duration-ms="568" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTestProblemUser -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.LoginTest3ProblemUser@3a3e4aff]" started-at="2025-11-26T14:44:55 IST" name="getResult" finished-at="2025-11-26T14:44:55 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[user2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Pass2]]>
+                <![CDATA[[TestResult name=LoginTestProblemUser status=SUCCESS method=LoginTest3ProblemUser.LoginTestProblemUser()[pri:1, instance:tests.LoginTest3ProblemUser@3a3e4aff] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- GetDataFromExcel -->
-        <test-method signature="GetDataFromExcel(java.lang.String,java.lang.String)[pri:0, instance:ExcelData.DataProvider@5b529706]" started-at="2025-11-03T15:59:20 IST" name="GetDataFromExcel" data-provider="DataSupplier" finished-at="2025-11-03T15:59:20 IST" duration-ms="5" status="PASS">
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest3ProblemUser@3a3e4aff]" started-at="2025-11-26T14:44:55 IST" name="tearDown" finished-at="2025-11-26T14:44:55 IST" duration-ms="239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LoginTest3ProblemUser -->
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.LoginTest@39ad977d]" started-at="2025-11-26T14:44:44 IST" name="setUp" finished-at="2025-11-26T14:44:48 IST" duration-ms="3349" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[user3]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Pass3]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- GetDataFromExcel -->
-      </class> <!-- ExcelData.DataProvider -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- setUp -->
+        <test-method signature="LoginTest()[pri:1, instance:tests.LoginTest@39ad977d]" started-at="2025-11-26T14:44:48 IST" name="LoginTest" finished-at="2025-11-26T14:44:49 IST" duration-ms="1218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@39ad977d]" started-at="2025-11-26T14:44:49 IST" name="getResult" finished-at="2025-11-26T14:44:49 IST" duration-ms="19" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LoginTest status=SUCCESS method=LoginTest.LoginTest()[pri:1, instance:tests.LoginTest@39ad977d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@39ad977d]" started-at="2025-11-26T14:44:49 IST" name="tearDown" finished-at="2025-11-26T14:44:49 IST" duration-ms="263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.LoginTest2Locked">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.LoginTest2Locked@13cf7d52]" started-at="2025-11-26T14:44:49 IST" name="setUp" finished-at="2025-11-26T14:44:51 IST" duration-ms="1880" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="LoginTestLockedUser()[pri:1, instance:tests.LoginTest2Locked@13cf7d52]" started-at="2025-11-26T14:44:51 IST" name="LoginTestLockedUser" finished-at="2025-11-26T14:44:52 IST" duration-ms="573" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTestLockedUser -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.LoginTest2Locked@13cf7d52]" started-at="2025-11-26T14:44:52 IST" name="getResult" finished-at="2025-11-26T14:44:52 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LoginTestLockedUser status=SUCCESS method=LoginTest2Locked.LoginTestLockedUser()[pri:1, instance:tests.LoginTest2Locked@13cf7d52] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest2Locked@13cf7d52]" started-at="2025-11-26T14:44:52 IST" name="tearDown" finished-at="2025-11-26T14:44:52 IST" duration-ms="195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LoginTest2Locked -->
+    </test> <!-- Chrome Test -->
+    <test started-at="2025-11-26T14:44:55 IST" name="Firefox Test" finished-at="2025-11-26T14:45:22 IST" duration-ms="27244">
+      <class name="tests.LoginTest3ProblemUser">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.LoginTest3ProblemUser@4a891c97]" started-at="2025-11-26T14:45:11 IST" name="setUp" finished-at="2025-11-26T14:45:17 IST" duration-ms="6087" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="LoginTestProblemUser()[pri:1, instance:tests.LoginTest3ProblemUser@4a891c97]" started-at="2025-11-26T14:45:17 IST" name="LoginTestProblemUser" finished-at="2025-11-26T14:45:18 IST" duration-ms="591" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTestProblemUser -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.LoginTest3ProblemUser@4a891c97]" started-at="2025-11-26T14:45:18 IST" name="getResult" finished-at="2025-11-26T14:45:18 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LoginTestProblemUser status=SUCCESS method=LoginTest3ProblemUser.LoginTestProblemUser()[pri:1, instance:tests.LoginTest3ProblemUser@4a891c97] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest3ProblemUser@4a891c97]" started-at="2025-11-26T14:45:18 IST" name="tearDown" finished-at="2025-11-26T14:45:22 IST" duration-ms="4132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LoginTest3ProblemUser -->
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="startTest()[pri:0, instance:tests.LoginTest@75f65e45]" started-at="2025-11-26T14:44:44 IST" name="startTest" finished-at="2025-11-26T14:44:44 IST" duration-ms="269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.LoginTest@75f65e45]" started-at="2025-11-26T14:44:55 IST" name="setUp" finished-at="2025-11-26T14:44:59 IST" duration-ms="4481" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="LoginTest()[pri:1, instance:tests.LoginTest@75f65e45]" started-at="2025-11-26T14:44:59 IST" name="LoginTest" finished-at="2025-11-26T14:45:00 IST" duration-ms="649" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@75f65e45]" started-at="2025-11-26T14:45:00 IST" name="getResult" finished-at="2025-11-26T14:45:00 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LoginTest status=SUCCESS method=LoginTest.LoginTest()[pri:1, instance:tests.LoginTest@75f65e45] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@75f65e45]" started-at="2025-11-26T14:45:00 IST" name="tearDown" finished-at="2025-11-26T14:45:01 IST" duration-ms="1264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="endReport()[pri:0, instance:tests.LoginTest@75f65e45]" started-at="2025-11-26T14:45:22 IST" name="endReport" finished-at="2025-11-26T14:45:22 IST" duration-ms="416" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.LoginTest2Locked">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.LoginTest2Locked@6eeade6c]" started-at="2025-11-26T14:45:01 IST" name="setUp" finished-at="2025-11-26T14:45:07 IST" duration-ms="5715" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="LoginTestLockedUser()[pri:1, instance:tests.LoginTest2Locked@6eeade6c]" started-at="2025-11-26T14:45:07 IST" name="LoginTestLockedUser" finished-at="2025-11-26T14:45:08 IST" duration-ms="629" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTestLockedUser -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.LoginTest2Locked@6eeade6c]" started-at="2025-11-26T14:45:08 IST" name="getResult" finished-at="2025-11-26T14:45:08 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LoginTestLockedUser status=SUCCESS method=LoginTest2Locked.LoginTestLockedUser()[pri:1, instance:tests.LoginTest2Locked@6eeade6c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest2Locked@6eeade6c]" started-at="2025-11-26T14:45:08 IST" name="tearDown" finished-at="2025-11-26T14:45:11 IST" duration-ms="3675" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LoginTest2Locked -->
+    </test> <!-- Firefox Test -->
+  </suite> <!-- Regression Suite -->
 </testng-results>

@@ -21,6 +21,7 @@ import utilities.ConfigReader;
 
 import java.io.File;
 import java.io.IOException;
+import java.lang.reflect.Method;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -33,10 +34,10 @@ public class BaseTest implements IAutocanstant {
 
 	public WebDriver driver;
 	public ExtentSparkReporter sparkReporter;
-	public ExtentReports extent;
-	public ExtentTest logger;
+	public static ExtentReports extent;
+	public static ExtentTest logger;
 
-	@BeforeTest
+	@BeforeSuite
 	public void startTest() {
 		sparkReporter = new ExtentSparkReporter(System.getProperty("user.dir") + "/reports/index.html");
 		// Create an object of extent rport
@@ -76,6 +77,12 @@ public class BaseTest implements IAutocanstant {
 		driver.get(url);
 
 	}
+	
+//	@BeforeMethod
+//	public void createTest(Method method) {
+//	    logger = extent.createTest(method.getName());
+//	}
+
 
 	@AfterMethod
 	public void getResult(ITestResult result) throws Exception {
@@ -104,7 +111,7 @@ public class BaseTest implements IAutocanstant {
 		DriverManager.quitDriver();
 	}
 
-	@AfterTest
+	@AfterSuite
 	public void endReport() {
 		extent.flush();
 	}

@@ -3,11 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ExcelData.DataProvider">
+      <class name="tests.AmazonHomeTest">
         <methods>
-          <include name="GetDataFromExcel"/>
+          <include name="setup"/>
+          <include name="verifyHomePageTitle"/>
+          <include name="tearDown"/>
+          <include name="searchProduct"/>
         </methods>
-      </class> <!-- ExcelData.DataProvider -->
+      </class> <!-- tests.AmazonHomeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
