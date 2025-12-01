@@ -9,7 +9,7 @@ public class DuplicateInString {
 		// TODO Auto-generated method stub
 
 		String str = "nanmm";
-		StringBuilder sb = new StringBuilder(str);
+	//	StringBuilder sb = new StringBuilder(str);
 		Set<Character> first = new LinkedHashSet<>();
 		Set<Character> duplicate = new LinkedHashSet<>();
 		Set<Character> set = new LinkedHashSet<>();

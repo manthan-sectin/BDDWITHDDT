@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Chrome Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/1</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Sep 13 16:52:19 IST 2025</td>
+<td>Started on:</td><td>Mon Dec 01 08:37:40 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>5 seconds (5597 ms)</td>
+<tr><td>Total time:</td><td>64 seconds (64951 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,41 +76,20 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.SampleTest.FailUrl()'><b>FailUrl</b><br>Test class: tests.SampleTest</td>
-<td><div><pre>java.lang.AssertionError: Deliberately failing the test
-	at tests.SampleTest.FailUrl(SampleTest.java:28)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1892381377", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1892381377'><pre>java.lang.AssertionError: Deliberately failing the test
+<td title='runners.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate login with multiple credential sets", "Sauce Demo Login Validation"</td>
+<td><div><pre>java.lang.AssertionError: Expected error not found. Actual: Epic sadface: Sorry, this user has been locked out. expected [true] but found [false]
+	at stepDefinitions.LoginStepsForSauceDemo.the_user_should_see(LoginStepsForSauceDemo.java:55)
+	at ✽.the user should see &quot;Epic sadface: Sorry, this user is locked out.&quot;(file:///D:/BDDWithDDT/src/test/resources/features/SauceDemoLogin.feature:12)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace548863882", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace548863882'><pre>java.lang.AssertionError: Expected error not found. Actual: Epic sadface: Sorry, this user has been locked out. expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:110)
-	at tests.SampleTest.FailUrl(SampleTest.java:28)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at stepDefinitions.LoginStepsForSauceDemo.the_user_should_see(LoginStepsForSauceDemo.java:55)
+	at ✽.the user should see &quot;Epic sadface: Sorry, this user is locked out.&quot;(file:///D:/BDDWithDDT/src/test/resources/features/SauceDemoLogin.feature:12)
 </pre></div></td>
-<td>0</td>
-<td>tests.SampleTest@57ac5227</td></tr>
+<td>13</td>
+<td>runners.TestRunner1@20a14b55</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -121,54 +100,30 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.SampleTest.GetUrl()'><b>GetUrl</b><br>Test class: tests.SampleTest</td>
+<td title='runners.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate login with multiple credential sets", "Sauce Demo Login Validation"</td>
 <td></td>
-<td>0</td>
-<td>tests.SampleTest@57ac5227</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
+<td>4</td>
+<td>runners.TestRunner1@20a14b55</td></tr>
 <tr>
-<td title='tests.SampleTest.SkipUrl()'><b>SkipUrl</b><br>Test class: tests.SampleTest</td>
-<td><div><pre>org.testng.SkipException: Skip this test deliberately
-	at tests.SampleTest.SkipUrl(SampleTest.java:33)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1471045910", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1471045910'><pre>org.testng.SkipException: Skip this test deliberately
-	at tests.SampleTest.SkipUrl(SampleTest.java:33)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-</pre></div></td>
-<td>0</td>
-<td>tests.SampleTest@57ac5227</td></tr>
+<td title='runners.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate login with multiple credential sets", "Sauce Demo Login Validation"</td>
+<td></td>
+<td>12</td>
+<td>runners.TestRunner1@20a14b55</td></tr>
+<tr>
+<td title='runners.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate login with multiple credential sets", "Sauce Demo Login Validation"</td>
+<td></td>
+<td>2</td>
+<td>runners.TestRunner1@20a14b55</td></tr>
+<tr>
+<td title='runners.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate login with multiple credential sets", "Sauce Demo Login Validation"</td>
+<td></td>
+<td>12</td>
+<td>runners.TestRunner1@20a14b55</td></tr>
+<tr>
+<td title='runners.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate login with multiple credential sets", "Sauce Demo Login Validation"</td>
+<td></td>
+<td>12</td>
+<td>runners.TestRunner1@20a14b55</td></tr>
 </table><p>
 </body>
 </html>

@@ -6,16 +6,10 @@
     <test name="Chrome Test">
         <parameter name="browser" value="chrome" />
         <classes>
-            <class name="tests.SampleTest" />
+            <class name="runners.TestRunner1" />
         </classes>
     </test>
-       
-    <test name="Firefox Test">
-        <parameter name="browser" value="firefox" />
-        <classes>
-            <class name="tests.SampleTest" />
-        </classes>
-    </test>
+    
  
  <!--
     <test name="Edge Test">

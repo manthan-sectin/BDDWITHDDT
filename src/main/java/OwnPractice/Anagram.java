@@ -8,8 +8,7 @@ public class Anagram {
 		// TODO Auto-generated method stub
 String str1="silent";
 String str2="liisten";
-char[]
- c1=str1.toCharArray();
+char[]c1=str1.toCharArray();
 char[] c2=str2.toCharArray();
 Arrays.sort(c1);
 Arrays.sort(c2);

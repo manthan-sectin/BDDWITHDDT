@@ -5,27 +5,13 @@
   <test thread-count="3" parallel="tests" name="Chrome Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="tests.SampleTest">
+      <class name="runners.TestRunner1">
         <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="SkipUrl"/>
-          <include name="FailUrl"/>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="1"/>
+          <include name="tearDownClass"/>
         </methods>
-      </class> <!-- tests.SampleTest -->
+      </class> <!-- runners.TestRunner1 -->
     </classes>
   </test> <!-- Chrome Test(failed) -->
-  <test thread-count="3" parallel="tests" name="Firefox Test(failed)">
-    <parameter name="browser" value="firefox"/>
-    <classes>
-      <class name="tests.SampleTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="SkipUrl"/>
-          <include name="FailUrl"/>
-        </methods>
-      </class> <!-- tests.SampleTest -->
-    </classes>
-  </test> <!-- Firefox Test(failed) -->
 </suite> <!-- Failed suite [Smoke Suite] -->
