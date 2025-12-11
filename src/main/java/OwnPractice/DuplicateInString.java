@@ -8,14 +8,14 @@ public class DuplicateInString {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		String str = "nanmm";
+		String str = "programming";
 	//	StringBuilder sb = new StringBuilder(str);
-		Set<Character> first = new LinkedHashSet<>();
+		Set<Character> unique = new LinkedHashSet<>();
 		Set<Character> duplicate = new LinkedHashSet<>();
 		Set<Character> set = new LinkedHashSet<>();
 
 		for(char c : str.toCharArray()) {
-			if(!first.add(c)) {
+			if(!unique.add(c)) {
 				duplicate.add(c);
 				
 				

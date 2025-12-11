@@ -15,6 +15,7 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 import utilities.DriverManager;
+import utilities.DriverManager2;
 import utilities.IAutocanstant;
 import utilities.Lib;
 import utilities.ConfigReader;
@@ -22,6 +23,7 @@ import utilities.ConfigReader;
 import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Method;
+import java.net.MalformedURLException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -66,15 +68,16 @@ public class BaseTest implements IAutocanstant {
 
 	@BeforeClass(alwaysRun = true)
 	@Parameters("browser")
-	public void setUp(@Optional("chrome") String browser) {
+	public void setUp(@Optional("chrome") String browser) throws MalformedURLException {
 		// loading log4j
 		// logger = LogManager.getLogger(this.getClass());// Log4j
 		// Initialize driver
-		DriverManager.setDriver(browser);
-		driver = DriverManager.getDriver();
+		DriverManager2.setDriver(browser);
+		driver = DriverManager2.getDriver();
 
-		String url = Lib.getProperty(CONFIG_PATH, "URL");
-		driver.get(url);
+	//	String url = Lib.getProperty(CONFIG_PATH, "URL");
+	//	String url = System.getenv("APP_URL");
+		driver.get("https://www.saucedemo.com");
 
 	}
 	
@@ -108,7 +111,8 @@ public class BaseTest implements IAutocanstant {
 
 	@AfterClass(alwaysRun = true)
 	public void tearDown() {
-		DriverManager.quitDriver();
+		//changes done here
+		DriverManager2.getDriver().quit();
 	}
 
 	@AfterSuite

@@ -1,5 +1,7 @@
 package OwnPractice;
 
+import java.util.Arrays;
+
 public class SecoondLargest {
 
 	public static void main(String[] args) {
@@ -26,6 +28,15 @@ public class SecoondLargest {
 		System.out.println(second);
 		System.out.println(larg);
 		
+		/////////////////////////////////////////////////////////////
+		///
+		///
+		///
+		///
+	
+		 int[] arr1 = {10, 20, 4, 45, 99};
+		Arrays.sort(arr1);
+        System.out.println(arr1[arr1.length - 3]);
 		
 		
 		
