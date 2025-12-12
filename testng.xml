@@ -4,7 +4,7 @@
   <!--  <parameter name="browser" value="chrome" />  -->
     
     <test name="Chrome Test">
-        <parameter name="browser" value="chrome" />
+        
         <classes>
         <class name="tests.LoginTest" />
             <class name="tests.LoginTest2Locked" />

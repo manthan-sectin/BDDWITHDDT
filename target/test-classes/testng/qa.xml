@@ -4,7 +4,7 @@
     <parameter name="reportDir" value="reports" />
     
     <test name="Chrome Test">
-        <parameter name="browser" value="chrome" />
+        
         <classes>
             <class name="tests.LoginTest" />
             <class name="tests.LoginTest2Locked" />
@@ -12,7 +12,7 @@
         </classes>
     </test>
        
-     
+     <!--
     <test name="Firefox Test">
         <parameter name="browser" value="firefox" />
         <classes>
@@ -28,5 +28,5 @@
         <classes>
            <class name="runners.TestRunner1"/>
         </classes>
-    </test>
+    </test> -->
 </suite>
