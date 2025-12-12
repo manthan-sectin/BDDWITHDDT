@@ -29,7 +29,7 @@ public class LoginTest2Locked extends BaseTest {
 	         login.SetUserName(username);
 	         logger.createNode("Username entered");
 	         login.SetPassword(Password);
-	         logger.createNode("Password entered");
+	         logger.createNode("Password entered with locked credentials");
 	         login.ClickOnSubmit();
 	         logger.createNode("Click on submit button");
     }

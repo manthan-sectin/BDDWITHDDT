@@ -2,8 +2,9 @@ package stepDefinitions;//stepDefinitions
 
 import io.cucumber.java.en.*;
 import pageObjects.LoginPageSauceDemoForBDD;
+import utilities.ConfigReader;
 import utilities.DriverManager;
-
+import utilities.DriverManager2;
 
 import static org.testng.Assert.*;
 public class LoginStepsForSauceDemo {
@@ -16,7 +17,8 @@ public class LoginStepsForSauceDemo {
 
 	    @Given("the user navigates to the Sauce Demo login page")
 	    public void the_user_navigates_to_the_sauce_demo_login_page() {
-	        DriverManager.getDriver().get("https://www.saucedemo.com/");
+	    	ConfigReader configReader = new ConfigReader();
+	        DriverManager.getDriver().get(configReader.getBaseUrl());
 	        loginPage = new LoginPageSauceDemoForBDD();
 	    }
 

@@ -27,7 +27,7 @@ public class LoginTest3ProblemUser extends BaseTest {
 		   SauceDemoLoginPage login = new SauceDemoLoginPage(driver);
 	         logger=extent.createTest("To Verify Login with problem user");
 	         login.SetUserName(username);
-	         logger.createNode("Username entered");
+	         logger.createNode("Username entered with problem user");
 	         login.SetPassword(Password);
 	         logger.createNode("Password entered");
 	         login.ClickOnSubmit();

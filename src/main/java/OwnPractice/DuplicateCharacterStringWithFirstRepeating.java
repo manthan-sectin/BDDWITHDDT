@@ -16,7 +16,7 @@ for(int i=0;i<str.length();i++) {
 	}
 	if(repeat) {
 		System.out.println("Duplicate char is " +c);
-		//break;
+		break;
 		
 	}
 }

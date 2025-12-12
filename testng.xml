@@ -6,9 +6,10 @@
     <test name="Chrome Test">
         <parameter name="browser" value="chrome" />
         <classes>
-            <class name="tests.LoginTest" />
+        <class name="tests.LoginTest" />
             <class name="tests.LoginTest2Locked" />
             <class name="tests.LoginTest3ProblemUser" />
+             
         </classes>
     </test>
     

@@ -12,7 +12,7 @@
         </classes>
     </test>
        
-     <!--
+     
     <test name="Firefox Test">
         <parameter name="browser" value="firefox" />
         <classes>
@@ -21,12 +21,12 @@
             <class name="tests.LoginTest3ProblemUser" />
         </classes>
     </test>
- --> 
- <!--
-    <test name="Edge Test">
+  
+ 
+    <test name="Chrome cucumber Test">
         <parameter name="browser" value="edge" />
         <classes>
-            <class name="tests.SampleTest" />
+           <class name="runners.TestRunner1"/>
         </classes>
-    </test>-->
+    </test>
 </suite>

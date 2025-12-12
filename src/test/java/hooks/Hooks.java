@@ -3,22 +3,26 @@ package hooks;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
+
+import java.net.MalformedURLException;
+
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import utilities.ConfigReader;
 import utilities.DriverManager;
+import utilities.DriverManager2;
 
 public class Hooks {
 
 	@Before(order = 0)
-	public void setUp() {
+	public void setUp() throws MalformedURLException {
 		ConfigReader configReader = new ConfigReader();
 		DriverManager.setDriver(configReader.getBrowser());
 	}
 
 	@After(order = 0)
 	public void tearDown() {
-		DriverManager.quitDriver();
+		DriverManager.getDriver().quit();
 	}
 
 	@After(order = 1)

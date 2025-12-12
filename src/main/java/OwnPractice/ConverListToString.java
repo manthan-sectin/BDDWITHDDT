@@ -11,7 +11,7 @@ public class ConverListToString {
 
 	//	List<String> list=Arrays.asList("A","B","C");
 		List<String> list=Arrays.asList("A","B","C"); 
-		 String joined = String.join(",", list);
+		 String joined = String.join(", ", list);
 
 	        System.out.println(joined);
 	}
