@@ -2,7 +2,7 @@ package OwnPractice;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
-
+//Not necessary
 public class DuplicateInString {
 
 	public static void main(String[] args) {

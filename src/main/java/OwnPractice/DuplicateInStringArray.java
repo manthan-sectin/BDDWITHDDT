@@ -8,7 +8,7 @@ public class DuplicateInStringArray {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		String arr[]= {"man","maj","aer","dfd"};
+		String arr[]= {"man","maj","aer","dfd","dfd"};
 		HashSet <String> unique=new HashSet<>();
 		HashSet<String> dup=new HashSet<>();
 		for(String s:arr) {

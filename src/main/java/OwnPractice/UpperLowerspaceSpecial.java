@@ -1,12 +1,16 @@
 package OwnPractice;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class UpperLowerspaceSpecial {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 		String str = "asAS123!@#";
-
+		List<Integer> list=Arrays.asList(1,2,5,3,2,6)
+;
 		int upper = 0;
 		int lower = 0;
 		int special = 0;

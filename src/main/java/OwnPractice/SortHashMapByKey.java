@@ -12,8 +12,8 @@ public class SortHashMapByKey {
 		// TODO Auto-generated method stub
 
 		Map<Integer, String> map=new HashMap<>();
-		map.put(1,"Sam");
-		map.put(3, "Jam");
+		map.put(7,"Sam");
+		map.put(37, "Jam");
 		map.put(5, "Ram");
 		
 		Map<Integer, String> sorted=new TreeMap<>(map);

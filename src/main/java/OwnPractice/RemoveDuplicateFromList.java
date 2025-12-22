@@ -12,7 +12,7 @@ public class RemoveDuplicateFromList {
 		// TODO Auto-generated method stub
 
 		
-//		List<Object> list=Arrays.asList(1,2,3,4,5,5,6);
+//List<Object> list=Arrays.asList(1,2,3,4,5,5,6);
 //		 Set<Integer> set=new LinkedHashSet<>(list);
 		
 		
