@@ -17,12 +17,12 @@ public class Hooks {
 	@Before(order = 0)
 	public void setUp() throws MalformedURLException {
 		ConfigReader configReader = new ConfigReader();
-		DriverManager.setDriver(configReader.getBrowser());
+		DriverManager2.setDriver(configReader.getBrowser());
 	}
 
 	@After(order = 0)
 	public void tearDown() {
-		DriverManager.getDriver().quit();
+		DriverManager2.getDriver().quit();
 	}
 
 	@After(order = 1)
