@@ -6,7 +6,7 @@ public class CountOccurancesOfCharInString {
 		// TODO Auto-generated method stub
 
 		String str="Manthaaan";
-		char target='a';
+		char target='h';
 		int count =0;
 		for(char c : str.toCharArray()) {
 			if(c==target) {

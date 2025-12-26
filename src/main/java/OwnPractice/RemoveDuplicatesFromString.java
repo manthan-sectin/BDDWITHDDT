@@ -7,7 +7,7 @@ public class RemoveDuplicatesFromString {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String s = "aabbccddeefg";
+		String s = "mantha";
 		 StringBuilder sb = new StringBuilder();
 
 //	        boolean[] seen = new boolean[256];

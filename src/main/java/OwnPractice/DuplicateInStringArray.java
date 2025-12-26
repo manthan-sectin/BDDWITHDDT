@@ -17,7 +17,7 @@ public class DuplicateInStringArray {
 				
 			}
 		}
-		System.out.println(Arrays.toString(arr));
+	//	System.out.println(Arrays.toString(arr));
 		System.out.println("Duplicate are : " +dup);
 		
 	//Only add int for numeric values

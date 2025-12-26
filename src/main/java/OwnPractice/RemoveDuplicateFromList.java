@@ -1,10 +1,9 @@
 package OwnPractice;
 
+import java.util.Arrays;
+import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.List;
-import java.util.Set;
-
-import org.assertj.core.util.Arrays;
 
 public class RemoveDuplicateFromList {
 
@@ -12,9 +11,9 @@ public class RemoveDuplicateFromList {
 		// TODO Auto-generated method stub
 
 		
-//List<Object> list=Arrays.asList(1,2,3,4,5,5,6);
-//		 Set<Integer> set=new LinkedHashSet<>(list);
-		
+List <String> list = Arrays.asList("man","than","man");
+HashSet<String> set=new LinkedHashSet<>(list);
+System.out.println(set);
 		
 		
 	}

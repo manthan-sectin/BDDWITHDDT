@@ -7,7 +7,7 @@ public class Anagram {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 String str1="silent";
-String str2="liisten";
+String str2="listen";
 char[]c1=str1.toCharArray();
 char[] c2=str2.toCharArray();
 Arrays.sort(c1);

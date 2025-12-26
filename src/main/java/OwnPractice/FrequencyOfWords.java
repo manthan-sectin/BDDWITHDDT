@@ -10,7 +10,7 @@ public class FrequencyOfWords {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		String str = "My name is java and java is core lang";
+		String str = "My name is heisenberg and you got damn right";
 		String[] words = str.split(" ");
 
 		Map<String, Integer> freq=new HashMap<>();
