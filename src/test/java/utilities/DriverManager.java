@@ -15,6 +15,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
+import java.util.HashMap;
+import java.util.Map;
 
 public class DriverManager {
 	private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
@@ -41,9 +43,15 @@ public class DriverManager {
 		case "safari":
 			webDriver = new SafariDriver();
 			break;
+
 		default:
+
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--guest");
+			options.addArguments("--disable-features=PasswordManagerOnboarding,PasswordLeakDetection");
+
 			WebDriverManager.chromedriver().setup();
-			webDriver = new ChromeDriver();
+			webDriver = new ChromeDriver(options);
 		}
 
 		webDriver.manage().window().maximize();

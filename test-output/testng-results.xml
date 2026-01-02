@@ -1,17 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-23T15:08:11 IST" name="Default suite" finished-at="2025-12-23T15:08:11 IST" duration-ms="71">
+  <suite started-at="2026-01-02T14:22:57 IST" name="Default suite" finished-at="2026-01-02T14:23:04 IST" duration-ms="7797">
     <groups>
     </groups>
-    <test started-at="2025-12-23T15:08:11 IST" name="Default test" finished-at="2025-12-23T15:08:11 IST" duration-ms="71">
-      <class name="OwnPractice.UserRegistrationTest">
-        <test-method signature="createUserTest()[pri:0, instance:OwnPractice.UserRegistrationTest@1af687fe]" started-at="2025-12-23T15:08:11 IST" name="createUserTest" finished-at="2025-12-23T15:08:11 IST" duration-ms="14" status="PASS">
+    <test started-at="2026-01-02T14:22:57 IST" name="Default test" finished-at="2026-01-02T14:23:04 IST" duration-ms="7797">
+      <class name="tests.EndToEndAutomation">
+        <test-method is-config="true" signature="startTest()[pri:0, instance:tests.EndToEndAutomation@31aa3ca5]" started-at="2026-01-02T14:22:56 IST" name="startTest" finished-at="2026-01-02T14:22:57 IST" duration-ms="246" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createUserTest -->
-      </class> <!-- OwnPractice.UserRegistrationTest -->
+        </test-method> <!-- startTest -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.EndToEndAutomation@31aa3ca5]" started-at="2026-01-02T14:22:57 IST" name="setUp" finished-at="2026-01-02T14:23:01 IST" duration-ms="4454" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="LoginTest()[pri:1, instance:tests.EndToEndAutomation@31aa3ca5]" started-at="2026-01-02T14:23:01 IST" name="LoginTest" finished-at="2026-01-02T14:23:03 IST" duration-ms="1834" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.EndToEndAutomation@31aa3ca5]" started-at="2026-01-02T14:23:03 IST" name="getResult" finished-at="2026-01-02T14:23:03 IST" duration-ms="19" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LoginTest status=SUCCESS method=EndToEndAutomation.LoginTest()[pri:1, instance:tests.EndToEndAutomation@31aa3ca5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="AddToCart()[pri:2, instance:tests.EndToEndAutomation@31aa3ca5]" started-at="2026-01-02T14:23:03 IST" name="AddToCart" finished-at="2026-01-02T14:23:03 IST" depends-on-methods="tests.EndToEndAutomation.LoginTest" duration-ms="270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddToCart -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.EndToEndAutomation@31aa3ca5]" started-at="2026-01-02T14:23:03 IST" name="getResult" finished-at="2026-01-02T14:23:03 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AddToCart status=SUCCESS method=EndToEndAutomation.AddToCart()[pri:2, instance:tests.EndToEndAutomation@31aa3ca5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="Checkout()[pri:3, instance:tests.EndToEndAutomation@31aa3ca5]" started-at="2026-01-02T14:23:03 IST" name="Checkout" finished-at="2026-01-02T14:23:03 IST" duration-ms="129" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Checkout -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.EndToEndAutomation@31aa3ca5]" started-at="2026-01-02T14:23:03 IST" name="getResult" finished-at="2026-01-02T14:23:03 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Checkout status=SUCCESS method=EndToEndAutomation.Checkout()[pri:3, instance:tests.EndToEndAutomation@31aa3ca5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="InputCheckoutFields()[pri:4, instance:tests.EndToEndAutomation@31aa3ca5]" started-at="2026-01-02T14:23:03 IST" name="InputCheckoutFields" finished-at="2026-01-02T14:23:04 IST" duration-ms="714" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InputCheckoutFields -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.EndToEndAutomation@31aa3ca5]" started-at="2026-01-02T14:23:04 IST" name="getResult" finished-at="2026-01-02T14:23:04 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=InputCheckoutFields status=SUCCESS method=EndToEndAutomation.InputCheckoutFields()[pri:4, instance:tests.EndToEndAutomation@31aa3ca5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.EndToEndAutomation@31aa3ca5]" started-at="2026-01-02T14:23:04 IST" name="tearDown" finished-at="2026-01-02T14:23:04 IST" duration-ms="306" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="endReport()[pri:0, instance:tests.EndToEndAutomation@31aa3ca5]" started-at="2026-01-02T14:23:04 IST" name="endReport" finished-at="2026-01-02T14:23:05 IST" duration-ms="465" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- tests.EndToEndAutomation -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

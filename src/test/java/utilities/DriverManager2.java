@@ -47,6 +47,8 @@ public class DriverManager2 {
 	            ChromeOptions options = new ChromeOptions();
 	            options.addArguments("--disable-dev-shm-usage");
 	            options.addArguments("--no-sandbox");
+	            options.addArguments("--guest");
+				options.addArguments("--disable-features=PasswordManagerOnboarding,PasswordLeakDetection");
 
 	            driver.set(new RemoteWebDriver(
 	                    new URL("http://selenium-hub:4444/wd/hub"),
@@ -56,6 +58,9 @@ public class DriverManager2 {
 
 	            FirefoxOptions options = new FirefoxOptions();
 	            options.addArguments("--disable-dev-shm-usage");
+	            options.addArguments("--no-sandbox");
+	            options.addArguments("--guest");
+				options.addArguments("--disable-features=PasswordManagerOnboarding,PasswordLeakDetection");
 
 	            driver.set(new RemoteWebDriver(
 	                    new URL("http://selenium-hub:4444/wd/hub"),

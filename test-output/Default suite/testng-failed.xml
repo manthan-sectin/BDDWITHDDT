@@ -3,11 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ExcelUtility.FinalExcelTest">
+      <class name="tests.EndToEndAutomation">
         <methods>
-          <include name="GetLoginDetails"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="AddToCart"/>
+          <include name="Checkout"/>
+          <include name="endReport"/>
+          <include name="LoginTest"/>
+          <include name="getResult"/>
+          <include name="startTest"/>
         </methods>
-      </class> <!-- ExcelUtility.FinalExcelTest -->
+      </class> <!-- tests.EndToEndAutomation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
