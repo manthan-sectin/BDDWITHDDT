@@ -10,7 +10,8 @@ public class EndToEndAutomation extends BaseTest {
 
 	@Test(priority = 1)
 	public void LoginTest() {
-		String xlPath = "D:\\BDDWithDDT\\src\\test\\resources\\testData\\ExcelReader.xlsx";
+		String xlPath =System.getProperty("user.dir")
+		        + "/src/test/resources/testData/ExcelReader.xlsx";
 		String username = ExcelUtility.getCellValue(xlPath, "Groups", 2, 0);
 		String Password = ExcelUtility.getCellValue(xlPath, "Groups", 2, 1);
 		SauceDemoLoginPage login = new SauceDemoLoginPage(driver);
@@ -47,7 +48,8 @@ public class EndToEndAutomation extends BaseTest {
 	public void InputCheckoutFields() throws InterruptedException {
 		SauceDemoLoginPage login = new SauceDemoLoginPage(driver);
 		logger = extent.createTest("Input checkout fields");
-		String xlPath = "D:\\BDDWithDDT\\src\\test\\resources\\testData\\ExcelReader.xlsx";
+		String xlPath =System.getProperty("user.dir")
+		        + "/src/test/resources/testData/ExcelReader.xlsx";
 		String FirstName = ExcelUtility.getCellValue(xlPath, "Groups", 8, 0);
 		String LastName = ExcelUtility.getCellValue(xlPath, "Groups", 9, 0);
 		String Zip = ExcelUtility.getCellValue(xlPath, "Groups", 10, 0);
