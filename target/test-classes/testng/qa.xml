@@ -4,9 +4,9 @@
     <parameter name="reportDir" value="reports" />
     <test name="Chrome Test">
         <classes>
-      <!--    <class name="tests.LoginTest" />
+        <class name="tests.LoginTest" />
             <class name="tests.LoginTest2Locked" />
-            <class name="tests.LoginTest3ProblemUser" />   -->  
+            <class name="tests.LoginTest3ProblemUser" />   
             <class name="tests.EndToEndAutomation" />  
         </classes>
     </test>
