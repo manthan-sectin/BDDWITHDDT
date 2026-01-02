@@ -10,6 +10,9 @@
             <class name="tests.EndToEndAutomation" />  
         </classes>
     </test>
-       
+    
+     
+    
+
 
 </suite>
