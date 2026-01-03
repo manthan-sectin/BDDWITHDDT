@@ -8,14 +8,6 @@ pipeline {
                 bat 'docker build -t cucumbertestcaseimage .'
             }
         }
-        
-            stage('Cleanup') {
-        steps {
-            bat 'docker-compose down || exit 0'
-        }
-    }
-
-        
 
         stage('Start Selenium Grid') {
             steps {
