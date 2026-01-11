@@ -21,7 +21,8 @@ public class LoginTest extends BaseTest {
 
     @Test(priority=1)
     public void LoginTest() {
-    	String xlPath="D:\\BDDWithDDT\\src\\test\\resources\\testData\\ExcelReader.xlsx";
+    	String xlPath =System.getProperty("user.dir")
+		        + "/src/test/resources/testData/ExcelReader.xlsx";
 		String username=ExcelUtility.getCellValue(xlPath, "Groups", 2, 0);
 		String Password=ExcelUtility.getCellValue(xlPath, "Groups", 2, 1);
 		   SauceDemoLoginPage login = new SauceDemoLoginPage(driver);
