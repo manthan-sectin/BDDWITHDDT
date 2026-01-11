@@ -3,18 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.EndToEndAutomation">
+      <class name="SeleniumPrograms.FileDownloads">
         <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="AddToCart"/>
-          <include name="Checkout"/>
-          <include name="endReport"/>
-          <include name="LoginTest"/>
-          <include name="getResult"/>
-          <include name="startTest"/>
+          <include name="DownloadFile"/>
         </methods>
-      </class> <!-- tests.EndToEndAutomation -->
+      </class> <!-- SeleniumPrograms.FileDownloads -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

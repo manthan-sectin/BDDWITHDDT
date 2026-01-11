@@ -2,70 +2,92 @@ pipeline {
     agent any
 
     stages {
-
-        stage('Build Docker Image') {
+        stage('Build the image') {
             steps {
-                bat 'docker build -t cucumbertestcaseimage .'
-            }
+               bat "docker build -t=cucumbertestcaseimage ."
+                           }
         }
 
-        stage('Start Selenium Grid') {
+        stage('Making infra up for execution') {
             steps {
-                bat 'docker-compose up -d selenium-hub chrome firefox'
+                bat "docker-compose up -d selenium-hub chrome firefox"
             }
-        }
-
-        stage('Parallel Test Execution') {
-            parallel {
-
-                stage('Chrome Execution') {
-                    steps {
-                        bat 'docker-compose up --abort-on-container-exit cucumber-testcase-chrome'
-                    }
-                    post {
-                        always {
-                            emailext(
-                                attachLog: true,
-                                attachmentsPattern: 'dockerreportchrome/index.html',
-                                subject: '$PROJECT_NAME - Chrome - Build #$BUILD_NUMBER - $BUILD_STATUS',
-                                to: 'malimanthan56@gmail.com',
-                                body: '''
-                                <h2>🚀 Chrome Automation Execution</h2>
-                                <p>Execution completed on Chrome browser.</p>
-                                <p>Please find the attached report.</p>
-                                '''
-                            )
-                        }
-                    }
-                }
-
-                stage('Firefox Execution') {
-                    steps {
-                        bat 'docker-compose up --abort-on-container-exit cucumber-testcase-firefox'
-                    }
-                    post {
-                        always {
-                            emailext(
-                                attachLog: true,
-                                attachmentsPattern: 'dockerreportfirefox/index.html',
-                                subject: '$PROJECT_NAME - Firefox - Build #$BUILD_NUMBER - $BUILD_STATUS',
-                                to: 'malimanthan56@gmail.com manthan60@gmail.com',
-                                body: '''
-                                <h2>🚀 Firefox Automation Execution</h2>
-                                <p>Execution completed on Firefox browser.</p>
-                                <p>Please find the attached report.</p>
-                                '''
-                            )
-                        }
-                    }
-                }
             }
+
+
+            stage('Execution on Chrome browser') {
+            steps {
+                bat "docker-compose up cucumber-testcase-chrome"
+            }
+                post { 
+        always { 
+            emailext attachLog: true, attachmentsPattern: 'dockerreportchrome/index.html', body: '''<div style="font-family: Arial, sans-serif; line-height: 1.6;">
+  <h2 style="color: #2E86C1;">🚀 Project Name: <span style="color: #1ABC9C;">Execution of a project</span></h2>
+  
+  
+  
+  <p>
+    <strong>Description:</strong><br>
+    <span style="color: #34495E;">
+      This project is responsible for the automated build and test <strong>AwesomeApp</strong> application.
+      It integrates with GitHub, runs regression tests, performs static analysis, and have an attachment with this email.
+    </span>
+  </p>
+
+  <hr style="border-top: 1px dashed #ccc;">
+
+  <h3 style="color: #8E44AD;">📦 Things to remember</h3>
+  <ul style="color: #2C3E50;">
+    <li>🔧 Dont need to get the latest code</li>
+    <li>🧪 Directly execute the test</li>
+    <li>🔍 click build now button</li>
+  </ul>
+
+  <h3 style="color: #E67E22;">📅 Last Updated:</h3>
+
+  <h3 style="color: #C0392B;">🧑‍💻 Maintainer</h3>
+</div>
+''', subject: '$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS! - Customized email notifier', to: 'malimanthan56@gmail.com'
         }
     }
-
-    post {
-        always {
-            bat 'docker-compose down'
         }
+
+        stage('Execution on Firefox browser') {
+            steps {
+                bat "docker-compose up cucumber-testcase-firefox"
+            }
+                post { 
+        always { 
+            emailext attachLog: true, attachmentsPattern: 'dockerreportfirefox/index.html', body: '''<div style="font-family: Arial, sans-serif; line-height: 1.6;">
+  <h2 style="color: #2E86C1;">🚀 Project Name: <span style="color: #1ABC9C;">Execution of a project</span></h2>
+  
+  
+  
+  <p>
+    <strong>Description:</strong><br>
+    <span style="color: #34495E;">
+      This project is responsible for the automated build and test <strong>AwesomeApp</strong> application.
+      It integrates with GitHub, runs regression tests, performs static analysis, and have an attachment with this email.
+    </span>
+  </p>
+
+  <hr style="border-top: 1px dashed #ccc;">
+
+  <h3 style="color: #8E44AD;">📦 Things to remember</h3>
+  <ul style="color: #2C3E50;">
+    <li>🔧 Dont need to get the latest code</li>
+    <li>🧪 Directly execute the test</li>
+    <li>🔍 click build now button</li>
+  </ul>
+
+  <h3 style="color: #E67E22;">📅 Last Updated:</h3>
+
+  <h3 style="color: #C0392B;">🧑‍💻 Maintainer</h3>
+</div>
+''', subject: '$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS! - Customized email notifier', to: 'malimanthan56@gmail.com manthan60@gmail.com'
+        }
+    }
+        }
+
     }
 }

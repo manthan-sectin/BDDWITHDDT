@@ -15,23 +15,14 @@ public class ShadowDOM {
 
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
-		driver.get("https://the-internet.herokuapp.com/");
+		driver.get("https://bonigarcia.dev/selenium-webdriver-java/shadow-dom.html");
 
 		driver.manage().window().maximize();
-		driver.findElement(By.linkText("Shadow DOM")).click();
-
-		// 1. To get "Let's have some different text!" (The Slotted Element)
-		// This is NOT inside the shadow root. It's a child of the host in the regular
-		// DOM.
-		System.out.println(driver.findElement(By.xpath("//my-paragraph/span")).getText());
-		WebElement slottedSpan = driver.findElement(By.cssSelector("my-paragraph > span"));
-		System.out.println("Slotted Text: " + slottedSpan.getText());
-
-		WebElement shadowHost = driver.findElement(By.cssSelector("my-paragraph"));
-		SearchContext shadowRoot = shadowHost.getShadowRoot();
-		Thread.sleep(2000);
-		WebElement shadowElement = shadowRoot.findElement(By.cssSelector("span[slot='my-text']"));
-		System.out.println(shadowElement.getText());
+		WebElement shadowHost=driver.findElement(By.cssSelector("#content"));
+		SearchContext shadowRoot=shadowHost.getShadowRoot();
+		String text = shadowRoot.findElement(By.cssSelector("p")).getText();
+		System.out.println(text);
+		driver.close();
 
 	}
 

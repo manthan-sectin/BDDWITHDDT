@@ -1,30 +1,21 @@
-#!/bin/sh
-
-
 echo "------------------------------------------------------"
-echo "------------- Starting the initialization ------------"
+echo "-------------Starting the initialization--------------"
 echo "------------------------------------------------------"
 
-echo "Checking if Selenium Hub is ready..."
-
+echo "Checking if hub is ready...."
 count=0
-while [ "$(curl -s http://selenium-hub:4444/status | jq -r .value.ready)" != "true" ]
+while [ "$(curl -s http://192.168.31.155:4444/status | jq -r .value.ready)" != "true"]
 do
-  count=$((count+1))
-  echo "Attempt: ${count}"
+	count=$((count+1))
+	echo "Attempt: ${count}"
+	if ["$count" -ge 60]
+	then
+		echo "***** Infrastructure is not up within 60 SECONDS *****"
+		exit 1
+	fi
+		sleep 1
+	done
+	
+	echo "Selenium Grid is up and running. Running the test...."
 
-  if [ "$count" -ge 60 ]
-  then
-    echo "***** Selenium Grid is not up within 60 seconds *****"
-    exit 1
-  fi
-
-  sleep 1
-done
-
-echo "------------------------------------------------------"
-echo "Selenium Grid is UP ✅"
-echo "Browser selected: ${browser}"
-echo "------------------------------------------------------"
-
-mvn -f /home/seleniumbddtestframework/pom.xml test -DcliBrowser=${browser}
+	mvn -f /home/seleniumbddtestframework/pom.xml test -DcliBrowser=${browser}		

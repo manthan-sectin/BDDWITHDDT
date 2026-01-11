@@ -41,14 +41,21 @@ public void DownloadFile() {
 		
 		driver.findElement(By.xpath("//a[contains(text(),'Image')]")).click();
 		
-		//Verify file exists
+	/*	//Verify file exists
 		File Folder=new File(filePath);
 		File[] listOfFiles=Folder.listFiles();
 		
 		for(File file:listOfFiles){
 			System.out.println("Downloaded file is : " +file.getName());
-		}
+		}*/
+		
+        File file = new File(filePath + "/some-file.txt");
+        if (file.exists()) {
+            System.out.println("File downloaded successfully");
+        } else {
+            System.out.println("File download failed");
+
 		driver.quit();
 	}
 
-}
+	}}
