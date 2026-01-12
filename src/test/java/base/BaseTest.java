@@ -72,8 +72,8 @@ public class BaseTest implements IAutocanstant {
 		// loading log4j
 		// logger = LogManager.getLogger(this.getClass());// Log4j
 		// Initialize driver
-		DriverManager.setDriver(browser);
-		driver = DriverManager.getDriver();
+		DriverManager2.setDriver(browser);
+		driver = DriverManager2.getDriver();
 
 	//	String url = Lib.getProperty(CONFIG_PATH, "URL");
 	//	String url = System.getenv("APP_URL");
@@ -112,7 +112,7 @@ public class BaseTest implements IAutocanstant {
 	@AfterClass(alwaysRun = true)
 	public void tearDown() {
 		//changes done here
-		DriverManager.getDriver().quit();
+		DriverManager2.getDriver().quit();
 	}
 
 	@AfterSuite
